@@ -37,6 +37,17 @@ header {
     padding-right: rem(40);
   }
 }
+li {
+  position: relative;
+  // @include above-width($tablet) {
+  //   padding-right: rem(110);
+  //   .year {
+  //     position: absolute;
+  //     top: 0;
+  //     right: 0;
+  //   }
+  // }
+}
 aside {
   @include above-width($tablet) {
     width: 25%;
