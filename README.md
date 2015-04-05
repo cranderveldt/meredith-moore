@@ -1,2 +1,2 @@
-# blanksite
-Blank Site
+# Meredith Moore
+Portfolio site for Meredith
