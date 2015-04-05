@@ -54,6 +54,41 @@ h1, h2, h3, h4, h5, h6, .h0, .h1, .h2, .h3, .h4, .h5, .h6, .h7 {
   @include font-size(14);
 }
 
+h2 {
+  @include font-size(28, 1);
+  font-weight: $font-weight-bold;
+  margin: 0 0 rem(20);
+  @include font-size(24, 1);
+  @include above-width($mobile) {
+    @include font-size(28, 1);
+  }
+  * + & {
+    margin-top: rem(40);
+  }
+}
+h3 {
+  font-weight: $font-weight-normal;
+  margin: 0 0 rem(20);
+  @include font-size(20, 1);
+  @include above-width($mobile) {
+    @include font-size(24, 1);
+  }
+  * + & {
+    margin-top: rem(40);
+  }
+}
+h4 {
+  font-weight: $font-weight-bold;
+  @include font-size(17, 1);
+  @include above-width($mobile) {
+    @include font-size(18, 1);
+  }
+  margin: 0 0 rem(10);
+  * + & {
+    margin-top: rem(20);
+  }
+}
+
 *, *:after, *:before { box-sizing: border-box; }
 .no-boxsizing, .no-boxsizing *, .no-boxsizing *:after, .no-boxsizing *:before { box-sizing: content-box; }
 .no-select, .no-select * { @include user-select(none); }
@@ -101,4 +136,7 @@ label {
     background: $fog;
     border-color: $fog;
   }
+}
+.note {
+  color: $base;
 }

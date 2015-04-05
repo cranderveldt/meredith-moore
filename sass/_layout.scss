@@ -1,0 +1,54 @@
+.constrain {
+  max-width: rem(1030);
+  margin: auto;
+  padding: 0 rem(15);
+}
+header {
+  padding: rem(80) 0;
+  background: #0f7eb2;
+  margin: 0 0 rem(40);
+  h1 {
+    text-align: center;
+    font-weight: $font-weight-light;
+    color: #FFF;
+    @include font-size(28, 1);
+    letter-spacing: rem(5);
+    @include above-width($mobile) {
+      @include font-size(40, 1);
+      letter-spacing: rem(15);
+    }
+  }
+}
+.wrapper {
+  @include flex-row-at($tablet);
+}
+.content {
+  margin-bottom: rem(40);
+  @include above-width($tablet) {
+    margin: 0;
+    width: 75%;
+    padding-right: rem(40);
+  }
+}
+aside {
+  @include above-width($tablet) {
+    width: 25%;
+  }
+  img {
+    @include border;
+  }
+}
+footer {
+  background: $fog;
+  padding: rem(40);
+  text-align: center;
+  margin-top: rem(40);
+  a {
+    color: $jumbo;
+    text-decoration: none;
+    font-weight: $font-weight-ultra;
+    &:hover {
+      color: $jet;
+    }
+  }
+}
