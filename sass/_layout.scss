@@ -10,12 +10,18 @@ header {
   h1 {
     text-align: center;
     font-weight: $font-weight-light;
-    color: #FFF;
     @include font-size(28, 1);
     letter-spacing: rem(5);
     @include above-width($mobile) {
       @include font-size(40, 1);
       letter-spacing: rem(15);
+    }
+  }
+  a {
+    color: #FFF;
+    text-decoration: none;
+    &:hover {
+      opacity: .8;
     }
   }
 }
